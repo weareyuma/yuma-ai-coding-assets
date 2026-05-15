@@ -1,0 +1,15 @@
+name: yuma-ai-coding-assets
+version: 1.0.0
+description: APM project for yuma-ai-coding-assets
+author: vincent.min
+# Which agent platforms to deploy to.
+# Resolution order: --target flag > this field > auto-detect from filesystem.
+# Accepted values: copilot, claude, cursor, opencode, codex, gemini, windsurf, all
+targets:
+- claude
+- vscode
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}
