@@ -29,4 +29,7 @@ marketplace:
       source: ./packages/spec-driven
     - name: code-simplifier
       source: ./packages/code-simplifier
-
+    - name: yuma-design-system
+      source: ./packages/yuma-design-system
+    - name: presentation
+      source: ./packages/presentation

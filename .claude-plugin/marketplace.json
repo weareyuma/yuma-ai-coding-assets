@@ -16,6 +16,18 @@
       "description": "Simplify code skill",
       "version": "1.0.0",
       "source": "./packages/code-simplifier"
+    },
+    {
+      "name": "yuma-design-system",
+      "description": "APM project for yuma-design-system",
+      "version": "1.0.0",
+      "source": "./packages/yuma-design-system"
+    },
+    {
+      "name": "presentation",
+      "description": "APM project for presentation",
+      "version": "1.0.0",
+      "source": "./packages/presentation"
     }
   ]
 }
