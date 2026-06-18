@@ -24,7 +24,8 @@ This skill is part of a set of five skills designed to work together:
 If any of these skills are missing from the project, **instruct the user to install them** before proceeding:
 
 ```bash
-npx skills add b12consulting/skills --skill <missing_skill>
+apm marketplace add weareyuma/yuma-ai-coding-assets
+apm install <missing_skill>@yuma
 ```
 
 ## Core Rules
