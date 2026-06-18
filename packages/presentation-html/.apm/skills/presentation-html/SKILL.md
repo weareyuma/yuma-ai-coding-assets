@@ -1,48 +1,50 @@
 ---
-name: presentation
-description: "Use this skill to create or revise PowerPoint presentations in the Yuma style."
+name: presentation-html
+description: "Use this skill to create or revise reveal.js HTML presentations in the Yuma style."
 ---
 
 # Presentation Skill
 
-Use this skill for end-to-end Yuma PowerPoint work: structuring the story, choosing slide types, composing a coherent deck, and coordinating implementation through the dependency skills.
+Use this skill for end-to-end Yuma HTML presentation work: structuring the story, choosing slide types, composing a coherent slide sequence, and coordinating implementation through the dependency skills.
 
 ## Dependency Boundary
 
 This skill depends on two other skills:
 
 - `yuma-design-system` owns the brand palette, typography, logos, and Y-symbol motif backgrounds.
-- `pptx` owns PPTX reading, editing, generation, conversion, and QA mechanics.
+- `revealjs` owns the HTML scaffold, CDN setup, slide structure, reveal.js initialization, responsive behavior, and browser QA.
 
-When creating a deck, load and follow both dependency skills.
+When creating a presentation, load and follow both dependency skills. Do not restate or override their source-of-truth instructions here.
 
 ## Workflow
 
 1. Establish the presentation goal, audience, source material, required output filename, and any constraints from the user.
 2. Use `yuma-design-system` for all brand choices and asset references.
-3. Use `pptx` for the correct creation or editing workflow and for validation steps.
+3. Use `revealjs` for the correct HTML scaffold, CDN setup, initialization, and validation steps.
 4. Build a slide plan before implementation: title, agenda if useful, section flow, content slides, evidence/data slides, and closing.
-5. Create the deck, render it for inspection, fix issues, and verify again using the `pptx` QA workflow.
+5. Create the HTML file, open or render it for inspection, fix issues, and verify again.
 
-## Yuma Deck Structure
+## Yuma Presentation Structure
 
 Prefer a restrained editorial rhythm:
 
 - Title slide using the Yuma title background.
-- Optional agenda slide for decks with three or more sections.
-- Section dividers when the deck has meaningful chapters.
+- Optional agenda slide for presentations with three or more sections.
+- Section dividers when the presentation has meaningful chapters.
 - Content slides that use whitespace, hierarchy, and varied layouts rather than repeated bullet pages.
 - Statement or quote slides for sharp narrative turns.
 - Chart or evidence slides where data needs to be compared.
 - Closing slide using the Yuma closing background.
 
-For most decks, use a dark/light/accent rhythm: branded title, clean white content slides, and a pink closing slide.
+For most presentations, use a dark/light/accent rhythm: branded title, clean white content slides, and a pink closing slide.
 
 ## Slide Composition Guidance
 
-Use these patterns as presentation-level starting points. Apply exact colors, fonts, logos, backgrounds, and technical syntax from the dependency skills.
+Use these patterns as presentation-level starting points. Apply exact colors, fonts, logos, and backgrounds from `yuma-design-system`.
 
 Executives and senior leaders may read only slide titles and skip the body. Every slide title must state the core actionable insight the audience should take away, not just name the topic. Prefer titles like "Retention risk is concentrated in the first 30 days" over "Retention analysis".
+
+Yuma presentations should feel editorial, spacious, and confident. Use strong left alignment, large expressive headlines, quiet body text, and generous negative space. Let the oversized Y-symbol motif appear as a branded background gesture on major moments, but do not force it onto every slide. The visual rhythm should suggest the Yuma template without mechanically copying any single example.
 
 ### Title / Cover
 
@@ -52,7 +54,7 @@ Executives and senior leaders may read only slide titles and skip the body. Ever
 
 ### Agenda
 
-- Use only when it helps the audience follow the deck.
+- Use only when it helps the audience follow the presentation.
 - Prefer a designed sequence over a plain bullet list.
 - Use zero-padded numbers for section labels.
 
@@ -99,19 +101,21 @@ Executives and senior leaders may read only slide titles and skip the body. Ever
 
 ## Presentation-Specific Rules
 
-- Use the standard widescreen slide format for Yuma decks.
+- Use a standard widescreen presentation format.
+- Output a single `.html` file unless the user asks for a different structure.
 - Keep layouts flat, clean, and left-aligned by default.
-- Vary layouts across the deck: do not repeat the same title-plus-bullets structure.
+- Vary layouts across the presentation: do not repeat the same title-plus-bullets structure.
 - Use content slides for substance and Y-symbol backgrounds for title, divider, statement, or closing moments.
 - Include visual evidence where appropriate: charts, screenshots, product images, diagrams, or simple structured layouts.
 - Avoid decorative lines, shadows, gradients, generic palettes, and text-only filler slides.
+- Make slides responsive enough that text remains legible and does not overlap at common browser window sizes.
 
 ## Completion Criteria
 
 A Yuma presentation is not done until:
 
-- The deck follows `yuma-design-system` brand guidance.
-- The PPTX file has been created or edited using the `pptx` workflow.
-- Content extraction catches no missing or leftover placeholder text.
-- Rendered slide images have been visually inspected.
+- The presentation follows `yuma-design-system` brand guidance.
+- The HTML file has been created or edited using the `revealjs` workflow.
+- A content check catches no missing or leftover placeholder text.
+- The rendered presentation has been visually inspected in a browser or browser screenshot.
 - Any visual issues found during inspection have been fixed and rechecked.
