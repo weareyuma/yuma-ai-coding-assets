@@ -1,0 +1,15 @@
+{
+  "name": "yuma",
+  "owner": {
+    "name": "yuma",
+    "url": "https://github.com/weareyuma"
+  },
+  "plugins": [
+    {
+      "name": "spec-driven",
+      "description": "Lightweight spec-driven approach",
+      "version": "1.0.0",
+      "source": "./packages/spec-driven"
+    }
+  ]
+}
