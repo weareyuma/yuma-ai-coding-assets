@@ -10,6 +10,12 @@
       "description": "Lightweight spec-driven approach",
       "version": "1.0.0",
       "source": "./packages/spec-driven"
+    },
+    {
+      "name": "code-simplifier",
+      "description": "Simplify code skill",
+      "version": "1.0.0",
+      "source": "./packages/code-simplifier"
     }
   ]
 }

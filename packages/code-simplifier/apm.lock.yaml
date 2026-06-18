@@ -1,0 +1,16 @@
+lockfile_version: '1'
+generated_at: '2026-06-18T10:49:13.737087+00:00'
+apm_version: 0.20.0
+dependencies:
+- repo_url: anthropics/claude-plugins-official
+  host: github.com
+  resolved_commit: 518259c1c3449a4f396505d4840c2163420bfb6c
+  resolved_ref: 518259c1c3449a4f396505d4840c2163420bfb6c
+  virtual_path: plugins/code-simplifier
+  is_virtual: true
+  package_type: marketplace_plugin
+  deployed_files:
+  - .github/agents/code-simplifier.agent.md
+  deployed_file_hashes:
+    .github/agents/code-simplifier.agent.md: sha256:2a51e8d210580d9f66ac2ed1226c41f9374565fc275da30d7bb95f65c2cc87bb
+  content_hash: sha256:17829c1e01585fdaac1ff7de902433fca42517c678ed627640617ef9492bc6e8

@@ -1,0 +1,12 @@
+name: code-simplifier
+version: 1.0.0
+description: Simplify code skill
+author: vincent.min
+targets:
+- copilot
+dependencies:
+  apm:
+  - anthropics/claude-plugins-official/plugins/code-simplifier#518259c1c3449a4f396505d4840c2163420bfb6c
+  mcp: []
+includes: auto
+scripts: {}
