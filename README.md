@@ -25,11 +25,11 @@ apm marketplace browse yuma
 Then you can install any listed skill with
 
 ```bash
-apm marketplace install <skill-name>@yuma
+apm install <skill-name>@yuma
 ```
 
 For example, install the spec-driven skills with
 
 ```bash
-apm marketplace install spec-driven@yuma
+apm install spec-driven@yuma
 ```
