@@ -1,6 +1,6 @@
 ---
 name: yuma-design-system
-description: "Use this skill when creating or reviewing Yuma-branded visual assets. It owns the Yuma brand palette, typography, logo assets, Y-symbol motif backgrounds, and background generation script."
+description: "Use this skill when creating or reviewing Yuma-branded visual assets. It owns the Yuma brand palette, typography, logo assets, and Y-symbol motif backgrounds."
 license: MIT
 metadata:
   author: b12consulting
@@ -67,29 +67,4 @@ Pre-generated backgrounds live in `references/`:
 | `yuma-bg-closing-pink.png`   | Pink background with darker pink Y on the right    |
 
 Use these assets directly rather than recreating the motif by hand.
-
-## Regenerating Backgrounds
-
-The background source script lives in the package root at `scripts/generate_backgrounds.py`. The agent must pass the source SVG and target `references/` directory explicitly so the script works whether the skill is installed under `.apm/skills`, `.agents/skills`, or another location.
-
-```bash
-python scripts/generate_backgrounds.py \
-  --symbol-svg path/to/yuma-design-system/references/Yuma_Symbol_Black-RGB.svg \
-  --output-dir path/to/yuma-design-system/references
-```
-
-Do not rely on default install locations. Resolve the actual `yuma-design-system/references` directory for the current workspace or installed skill, then pass that path as `--output-dir`.
-
-The script requires `cairosvg`, `Pillow`, and the cairo system library.
-
-On macOS, install the system library with:
-
-```bash
-brew install cairo
-```
-
-Then install the Python dependencies in the environment used to run the script:
-
-```bash
-pip install cairosvg Pillow
-```
+Use these backgrounds for example in transition slides, title slides, or any layout where the Yuma brand should be strongly represented.
