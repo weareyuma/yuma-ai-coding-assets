@@ -5,6 +5,7 @@ author: vincent.min
 dependencies:
   apm:
   - anthropics/skills/skills/pptx
+  - ../yuma-design-system
   mcp: []
 includes: auto
 scripts: {}
