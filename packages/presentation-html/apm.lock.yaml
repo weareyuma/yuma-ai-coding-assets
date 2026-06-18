@@ -1,0 +1,45 @@
+lockfile_version: '1'
+generated_at: '2026-06-18T12:29:50.695492+00:00'
+apm_version: 0.20.0
+dependencies:
+- repo_url: _local/yuma-design-system
+  package_type: apm_package
+  deployed_files:
+  - .agents/skills/yuma-design-system
+  - .agents/skills/yuma-design-system/SKILL.md
+  - .agents/skills/yuma-design-system/references/Yuma_Symbol_Black-RGB.png
+  - .agents/skills/yuma-design-system/references/Yuma_Symbol_Black-RGB.svg
+  - .agents/skills/yuma-design-system/references/Yuma_Symbol_White-RGB.png
+  - .agents/skills/yuma-design-system/references/Yuma_Symbol_White-RGB.svg
+  - .agents/skills/yuma-design-system/references/Yuma_Wordmark_Black-RGB.png
+  - .agents/skills/yuma-design-system/references/Yuma_Wordmark_Black-RGB.svg
+  - .agents/skills/yuma-design-system/references/Yuma_Wordmark_White-RGB.png
+  - .agents/skills/yuma-design-system/references/Yuma_Wordmark_White-RGB.svg
+  - .agents/skills/yuma-design-system/references/Yuma_logo_Black-RGB.png
+  - .agents/skills/yuma-design-system/references/Yuma_logo_Black-RGB.svg
+  - .agents/skills/yuma-design-system/references/Yuma_logo_White-RGB.png
+  - .agents/skills/yuma-design-system/references/Yuma_logo_White-RGB.svg
+  - .agents/skills/yuma-design-system/references/yuma-bg-closing-pink.png
+  - .agents/skills/yuma-design-system/references/yuma-bg-content-subtle.png
+  - .agents/skills/yuma-design-system/references/yuma-bg-section-green.png
+  - .agents/skills/yuma-design-system/references/yuma-bg-title-green.png
+  deployed_file_hashes:
+    .agents/skills/yuma-design-system/SKILL.md: sha256:6839e3a4bf6cacedcb0a2d9ab28a5eb3b68ee66362b4343b68cec724024f0517
+    .agents/skills/yuma-design-system/references/Yuma_Symbol_Black-RGB.png: sha256:c81306ce82f8cbb8ef9247e8b52560330e7bfa245c81a06207391a4c20afc73f
+    .agents/skills/yuma-design-system/references/Yuma_Symbol_Black-RGB.svg: sha256:a8b4c53a01feb78d9b5903ac0358d9e8d15eccd28431496295d181d2e5b28d97
+    .agents/skills/yuma-design-system/references/Yuma_Symbol_White-RGB.png: sha256:963e778b769334958e5e79d164f4aeeecb3a1959ca1ce3ae4282c0b8ceacf64b
+    .agents/skills/yuma-design-system/references/Yuma_Symbol_White-RGB.svg: sha256:2a092eeee7f536f5f1e225870b61b3ea1a357c06e1d022526a280e404264f47e
+    .agents/skills/yuma-design-system/references/Yuma_Wordmark_Black-RGB.png: sha256:8ab5862031b4511fd2d0b4136f98c065c8f80e7da8eaa29b181cc1ee87bec9d8
+    .agents/skills/yuma-design-system/references/Yuma_Wordmark_Black-RGB.svg: sha256:280f1280fb109b79119fa1672ff74257316feabfbd47f38acfbe3452bb355fc2
+    .agents/skills/yuma-design-system/references/Yuma_Wordmark_White-RGB.png: sha256:087ac14511b32cd48496775d74da4ab4ada8df9719b8685337b8da26e2f0c258
+    .agents/skills/yuma-design-system/references/Yuma_Wordmark_White-RGB.svg: sha256:838c22f342c12373999ba4c641dabdd40af2ae5ce0681ba7b74b975ee874c260
+    .agents/skills/yuma-design-system/references/Yuma_logo_Black-RGB.png: sha256:37072f337864e34c340b1a4b896c1f91e526e061ba9ab05496c42629161c93d4
+    .agents/skills/yuma-design-system/references/Yuma_logo_Black-RGB.svg: sha256:c87304844133382e757a2e98a78d57ff7ec9148eb4c639dcc6e61088913949e5
+    .agents/skills/yuma-design-system/references/Yuma_logo_White-RGB.png: sha256:7f69cdf646463827cf46812dcb46cce454db64a3bd764db3621bcde6843298a5
+    .agents/skills/yuma-design-system/references/Yuma_logo_White-RGB.svg: sha256:0d7a36d6a1e83b773a75ba9049f02cc6cf7a8204c7086ffc48fc976680735fb6
+    .agents/skills/yuma-design-system/references/yuma-bg-closing-pink.png: sha256:bedc75cea24671ca1872e549beb59fc308fb9688328360d2292347955a210fae
+    .agents/skills/yuma-design-system/references/yuma-bg-content-subtle.png: sha256:4b4c2f665179900a4e37715417d6480e2efb959dab03af7ee715244c99bbf8d6
+    .agents/skills/yuma-design-system/references/yuma-bg-section-green.png: sha256:0109bbee501427f42e254761000a86ba64202a79b6cec53c0a57dbbc312da99d
+    .agents/skills/yuma-design-system/references/yuma-bg-title-green.png: sha256:3d6f16cf842ba927f2815bbebd6cfab9ec8b548d762fcd4f83705d257d8da385
+  source: local
+  local_path: ../yuma-design-system

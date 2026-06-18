@@ -1,0 +1,1 @@
+This package allows agents to write reveal.js HTML presentations that conform to the Yuma design system.

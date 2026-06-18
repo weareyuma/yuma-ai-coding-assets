@@ -1,6 +1,6 @@
-name: presentation
+name: presentation-pptx
 version: 1.0.0
-description: APM project for presentation
+description: Let agents create yuma-branded pptx presentations
 author: vincent.min
 dependencies:
   apm:

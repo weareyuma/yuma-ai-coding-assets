@@ -1,0 +1,10 @@
+name: presentation-html
+version: 1.0.0
+description: Let agents create yuma-branded html reveal.js presentations
+author: vincent.min
+dependencies:
+  apm:
+  - ../yuma-design-system
+  mcp: []
+includes: auto
+scripts: {}

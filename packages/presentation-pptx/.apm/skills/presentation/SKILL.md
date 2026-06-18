@@ -14,7 +14,7 @@ This skill depends on two other skills:
 - `yuma-design-system` owns the brand palette, typography, logos, and Y-symbol motif backgrounds.
 - `pptx` owns PPTX reading, editing, generation, conversion, and QA mechanics.
 
-When creating a deck, load and follow both dependency skills. Do not restate or override their source-of-truth instructions here.
+When creating a deck, load and follow both dependency skills.
 
 ## Workflow
 
