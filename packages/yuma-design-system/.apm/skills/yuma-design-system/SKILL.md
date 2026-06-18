@@ -1,40 +1,95 @@
 ---
-name: yuma-design
-description: Yuma brand design reference covering color palette, logos and typography guidance. Use this skill when creating or reviewing Yuma-branded visual assets to stay aligned with the design system.
+name: yuma-design-system
+description: "Use this skill when creating or reviewing Yuma-branded visual assets. It owns the Yuma brand palette, typography, logo assets, Y-symbol motif backgrounds, and background generation script."
 license: MIT
 metadata:
-	author: b12consulting
-	version: "1.0.0"
+  author: b12consulting
+  version: "1.0.0"
 ---
 
-# Yuma Color palette
+# Yuma Design System
 
-Color is an essential component of our brand and is what makes a communication immediately recognizable asYuma. Our palette is serious with a range of joyful touch.
+This skill is the source of truth for Yuma brand decisions. Other skills may depend on it, but they should not duplicate or redefine the brand palette, typography, logo files, or Y-symbol background assets.
 
-| Color         | Hex     | RGB           |
-| ------------- | ------- | ------------- |
-| Black         | #000000 | 0, 0, 0       |
-| White         | #ffffff | 255, 255, 255 |
-| Off white     | #f8f5f5 | 248, 245, 245 |
-| Earth         | #c4a892 | 196, 168, 146 |
-| Future Green  | #21e467 | 33, 228, 103  |
-| Granular Grey | #f0ece9 | 240, 236, 233 |
-| Forest Green  | #005d46 | 0, 93, 70     |
-| Purple        | #6434da | 100, 52, 218  |
-| Pink          | #eba9ff | 235, 169, 255 |
+## Color Palette
 
-# Logos
+Use only these colors for Yuma-branded assets unless the user explicitly provides an approved brand update.
 
-See `references/` for the Yuma logo files:
+| Color         | Hex       | RGB             | Role                                 |
+| ------------- | --------- | --------------- | ------------------------------------ |
+| Black         | `#000000` | `0, 0, 0`       | Primary text, dark assets            |
+| White         | `#ffffff` | `255, 255, 255` | Light backgrounds, text on dark      |
+| Off White     | `#f8f5f5` | `248, 245, 245` | Subtle light background              |
+| Earth         | `#c4a892` | `196, 168, 146` | Warm neutral accent                  |
+| Future Green  | `#21e467` | `33, 228, 103`  | Bright green brand accent            |
+| Granular Grey | `#f0ece9` | `240, 236, 233` | Secondary surface and footer neutral |
+| Forest Green  | `#005d46` | `0, 93, 70`     | Primary brand color                  |
+| Purple        | `#6434da` | `100, 52, 218`  | Accent color                         |
+| Pink          | `#eba9ff` | `235, 169, 255` | Closing and expressive accent        |
 
-- Yuma*logo*\*: The primary Yuma logo, containing both the symbol and wordmark, which should be used in most cases.
-- Yuma*symbol*\*: The Yuma symbol, which can be used when the full logo is not appropriate or when a more compact representation is needed.
-- Yuma*wordmark*\*: The Yuma wordmark, which can be used when the symbol is not appropriate or when a more text-focused representation is needed.
+## Typography
 
-# Typography
+Yuma uses two brand typefaces:
 
-Using typography is a big part of how we express ourselves as a brand. Yuma uses two brand typefaces, BogueSlab-Thin and Inter. We have one typeface we use for our headlines: BogueSlab Thin. Featuring many fine details, the soft forms gives it a friendly and approachable character with a hint of humanistic feeling. It’s the quiet confidence Yuma presents. The back-up font for Bogue Slab Thin when using Google applications is Merriweather.
+- **Headlines:** BogueSlab Thin. When BogueSlab is unavailable, use Merriweather as the closest Google Fonts substitute.
+- **Body copy:** Inter. Use Inter Light for most text, with Inter Regular or Inter SemiBold for emphasis.
 
-Our secondary typeface is Inter. It is used across all body copy when we need to be a bit more clear and digestible versus expressive. We use Inter Light for the most part, but will occasionally highlight key words or sections in Inter Regular or Inter SemiBold. It’s available in Google Font.
+Fallbacks are only for environments where the brand fonts are unavailable:
 
-Two alternatives can be used only when we don’t have access to either of our typefaces. Specifically when using Microsoft applications (like invoices or your signature in Microsoft Outlook): Times New Roman and Arial Regular.
+- Headline fallback: Times New Roman
+- Body fallback: Arial Regular
+
+Headlines should feel light and expressive. Avoid bold headline styling unless an approved source asset already uses it.
+
+## Logo Assets
+
+Logo assets live in `references/`.
+
+| Asset Pattern     | Use                                                                                   |
+| ----------------- | ------------------------------------------------------------------------------------- |
+| `Yuma_logo_*`     | Primary Yuma logo with symbol and wordmark. Use in most branded layouts.              |
+| `Yuma_Symbol_*`   | Standalone Yuma symbol. Use when the full logo is too large or when creating a motif. |
+| `Yuma_Wordmark_*` | Wordmark only. Use when the symbol is already present elsewhere.                      |
+
+Each logo family includes black and white variants. Use black variants on light backgrounds and white variants on dark backgrounds.
+
+## Y-Symbol Backgrounds
+
+The oversized Y-symbol motif is a signature Yuma background treatment. The symbol should be large, cropped by the canvas edge, and tone-on-tone or closely related to the background color.
+
+Pre-generated backgrounds live in `references/`:
+
+| File                         | Use                                                |
+| ---------------------------- | -------------------------------------------------- |
+| `yuma-bg-title-green.png`    | Forest Green background with bright Y on the right |
+| `yuma-bg-section-green.png`  | Forest Green background with bright Y on the left  |
+| `yuma-bg-content-subtle.png` | White background with subtle grey Y on the right   |
+| `yuma-bg-closing-pink.png`   | Pink background with darker pink Y on the right    |
+
+Use these assets directly rather than recreating the motif by hand.
+
+## Regenerating Backgrounds
+
+The background source script lives in the package root at `scripts/generate_backgrounds.py`. The agent must pass the source SVG and target `references/` directory explicitly so the script works whether the skill is installed under `.apm/skills`, `.agents/skills`, or another location.
+
+```bash
+python scripts/generate_backgrounds.py \
+  --symbol-svg path/to/yuma-design-system/references/Yuma_Symbol_Black-RGB.svg \
+  --output-dir path/to/yuma-design-system/references
+```
+
+Do not rely on default install locations. Resolve the actual `yuma-design-system/references` directory for the current workspace or installed skill, then pass that path as `--output-dir`.
+
+The script requires `cairosvg`, `Pillow`, and the cairo system library.
+
+On macOS, install the system library with:
+
+```bash
+brew install cairo
+```
+
+Then install the Python dependencies in the environment used to run the script:
+
+```bash
+pip install cairosvg Pillow
+```
