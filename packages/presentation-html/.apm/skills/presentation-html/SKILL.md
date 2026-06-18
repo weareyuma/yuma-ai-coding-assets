@@ -22,7 +22,7 @@ When creating a presentation, load and follow both dependency skills. Do not res
 2. Use `yuma-design-system` for all brand choices and asset references.
 3. Use `revealjs` for the correct HTML scaffold, CDN setup, initialization, and validation steps.
 4. Build a slide plan before implementation: title, agenda if useful, section flow, content slides, evidence/data slides, and closing.
-5. Create the HTML file, open or render it for inspection, fix issues, and verify again.
+5. Create the HTML file, verify it with the `revealjs` screenshot workflow when possible, inspect the output, fix issues, and verify again.
 
 ## Yuma Presentation Structure
 
@@ -109,6 +109,7 @@ Yuma presentations should feel editorial, spacious, and confident. Use strong le
 - Include visual evidence where appropriate: charts, screenshots, product images, diagrams, or simple structured layouts.
 - Avoid decorative lines, shadows, gradients, generic palettes, and text-only filler slides.
 - Make slides responsive enough that text remains legible and does not overlap at common browser window sizes.
+- During visual inspection, check that text color has enough contrast and that the Y-symbol motif does not overlap, obscure, or compete with the primary message.
 
 ## Completion Criteria
 
@@ -117,5 +118,5 @@ A Yuma presentation is not done until:
 - The presentation follows `yuma-design-system` brand guidance.
 - The HTML file has been created or edited using the `revealjs` workflow.
 - A content check catches no missing or leftover placeholder text.
-- The rendered presentation has been visually inspected in a browser or browser screenshot.
+- The rendered presentation has been visually inspected through Playwright screenshots, a browser tool, or a clearly reported PDF fallback.
 - Any visual issues found during inspection have been fixed and rechecked.
