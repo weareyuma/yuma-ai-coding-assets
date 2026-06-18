@@ -9,25 +9,6 @@ A lightweight entrypoint for a collaborative human-agent methodology where requi
 
 Read this skill first. Then load deeper references only when the current task needs them.
 
-## Skill Dependencies
-
-This skill is part of a set of five skills designed to work together:
-
-| Skill                        | Purpose                                                 |
-| ---------------------------- | ------------------------------------------------------- |
-| **spec-driven** (this skill) | Core rules and high-level document map                  |
-| **specs-setup**              | Initialize `specs/` for a new project                   |
-| **specs-tickets**            | Create and execute tickets through their lifecycle      |
-| **specs-review**             | Audit specs health, consistency, and drift              |
-| **specs-finish-ticket**      | Review implemented tickets before marking them complete |
-
-If any of these skills are missing from the project, **instruct the user to install them** before proceeding:
-
-```bash
-apm marketplace add weareyuma/yuma-ai-coding-assets
-apm install <missing_skill>@yuma
-```
-
 ## Core Rules
 
 1. **Specs are the ground truth.** When code and specs disagree, the specs win. Either update the code or create an ADR to change the specs.

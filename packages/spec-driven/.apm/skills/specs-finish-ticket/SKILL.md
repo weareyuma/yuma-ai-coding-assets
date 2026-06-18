@@ -9,23 +9,6 @@ Review an implemented ticket in a fresh conversation before marking it `done`.
 
 This skill verifies that the implementation matches the spec, the plan was meaningfully executed, the tests meaningfully cover the promised behavior, any important drift is corrected in `specs/`, and durable implementation discoveries are captured in `Findings.md`.
 
-## Skill Dependencies
-
-This skill is part of a set of skills designed to work together:
-
-- **spec-driven** — Core rules and high-level document map
-- **specs-setup** — Initialize `specs/` for a new project
-- **specs-tickets** — Create and execute tickets through their lifecycle
-- **specs-review** — Audit specs health, consistency, and drift
-- **specs-finish-ticket** (this skill) — Review implemented tickets before closure
-
-If any of these skills are missing from the project, **instruct the user to install them** before proceeding:
-
-```bash
-apm marketplace add weareyuma/yuma-ai-coding-assets
-apm install <missing_skill>@yuma
-```
-
 **Always load the [spec-driven](../spec-driven/SKILL.md) skill first** for the core rules. Load the [methodology reference](../spec-driven/references/methodology.md) for detailed lifecycle, drift, ADR, and Findings guidance. Load [templates](../spec-driven/references/templates.md) only if you need to update ticket docs.
 
 ## Fresh Review Requirement

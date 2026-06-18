@@ -7,23 +7,6 @@ description: "Review the health of a spec-driven project. Use when: checking if 
 
 Audit the health and consistency of a project's spec-driven documentation.
 
-## Skill Dependencies
-
-This skill is part of a set of skills designed to work together:
-
-- **spec-driven** — Core rules and high-level document map
-- **specs-setup** — Initialize `specs/` for a new project
-- **specs-tickets** — Create and execute tickets through their lifecycle
-- **specs-finish-ticket** — Review implemented tickets before closure
-- **specs-review** (this skill) — Audit specs health and consistency
-
-If any of these skills are missing from the project, **instruct the user to install them** before proceeding:
-
-```bash
-apm marketplace add weareyuma/yuma-ai-coding-assets
-apm install <missing_skill>@yuma
-```
-
 **Always load the [spec-driven](../spec-driven/SKILL.md) skill first** for the core rules. Load the [methodology reference](../spec-driven/references/methodology.md) when you need detailed lifecycle, document, ADR, or Findings guidance.
 
 ## Procedure
