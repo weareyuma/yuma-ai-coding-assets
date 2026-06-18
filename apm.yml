@@ -25,11 +25,15 @@ marketplace:
   #   apm pack --marketplace=claude,codex --json | jq -r '.marketplace.outputs[].path'
 
   packages:
-    - name: spec-driven
-      source: ./packages/spec-driven
     - name: code-simplifier
       source: ./packages/code-simplifier
+    - name: ogsm
+      source: ./packages/ogsm
+    - name: presentation-pptx
+      source: ./packages/presentation-pptx
+    - name: presentation-html
+      source: ./packages/presentation-html
+    - name: spec-driven
+      source: ./packages/spec-driven
     - name: yuma-design-system
       source: ./packages/yuma-design-system
-    - name: presentation
-      source: ./packages/presentation

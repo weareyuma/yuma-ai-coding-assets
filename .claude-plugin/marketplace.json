@@ -6,28 +6,40 @@
   },
   "plugins": [
     {
-      "name": "spec-driven",
-      "description": "Lightweight spec-driven approach",
-      "version": "1.0.0",
-      "source": "./packages/spec-driven"
-    },
-    {
       "name": "code-simplifier",
       "description": "Simplify code skill",
       "version": "1.0.0",
       "source": "./packages/code-simplifier"
     },
     {
+      "name": "ogsm",
+      "description": "OGSM (Objective, Goals, Strategies, Measures) skill",
+      "version": "1.0.0",
+      "source": "./packages/ogsm"
+    },
+    {
+      "name": "presentation-pptx",
+      "description": "Let agents create yuma-branded pptx presentations",
+      "version": "1.0.0",
+      "source": "./packages/presentation-pptx"
+    },
+    {
+      "name": "presentation-html",
+      "description": "Let agents create yuma-branded html reveal.js presentations",
+      "version": "1.0.0",
+      "source": "./packages/presentation-html"
+    },
+    {
+      "name": "spec-driven",
+      "description": "Lightweight spec-driven approach",
+      "version": "1.0.0",
+      "source": "./packages/spec-driven"
+    },
+    {
       "name": "yuma-design-system",
       "description": "APM project for yuma-design-system",
       "version": "1.0.0",
       "source": "./packages/yuma-design-system"
-    },
-    {
-      "name": "presentation",
-      "description": "APM project for presentation",
-      "version": "1.0.0",
-      "source": "./packages/presentation"
     }
   ]
 }
