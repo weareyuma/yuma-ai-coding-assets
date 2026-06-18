@@ -5,23 +5,24 @@ description: "Use this skill to create or revise reveal.js HTML presentations in
 
 # Presentation Skill
 
-Use this skill for end-to-end Yuma HTML presentation work: structuring the story, choosing slide types, composing a coherent slide sequence, and implementing a polished reveal.js file that follows the Yuma design system.
+Use this skill for end-to-end Yuma HTML presentation work: structuring the story, choosing slide types, composing a coherent slide sequence, and coordinating implementation through the dependency skills.
 
 ## Dependency Boundary
 
-This skill depends on one packaged skill and one browser dependency:
+This skill depends on two other skills:
 
 - `yuma-design-system` owns the brand palette, typography, logos, and Y-symbol motif backgrounds.
-- reveal.js should be loaded from a public CDN in the generated HTML file. Do not require a local package install unless the user explicitly asks for it.
+- `revealjs` owns the HTML scaffold, CDN setup, slide structure, reveal.js initialization, responsive behavior, and browser QA.
 
-When creating a presentation, load and follow `yuma-design-system`.
+When creating a presentation, load and follow both dependency skills. Do not restate or override their source-of-truth instructions here.
 
 ## Workflow
 
 1. Establish the presentation goal, audience, source material, required output filename, and any constraints from the user.
 2. Use `yuma-design-system` for all brand choices and asset references.
-3. Build a slide plan before implementation: title, agenda if useful, section flow, content slides, evidence/data slides, and closing.
-4. Create the HTML file, open or render it for inspection, fix issues, and verify again.
+3. Use `revealjs` for the correct HTML scaffold, CDN setup, initialization, and validation steps.
+4. Build a slide plan before implementation: title, agenda if useful, section flow, content slides, evidence/data slides, and closing.
+5. Create the HTML file, open or render it for inspection, fix issues, and verify again.
 
 ## Yuma Presentation Structure
 
@@ -102,14 +103,11 @@ Yuma presentations should feel editorial, spacious, and confident. Use strong le
 
 - Use a standard widescreen presentation format.
 - Output a single `.html` file unless the user asks for a different structure.
-- Load reveal.js CSS and JavaScript from a CDN, and initialize reveal.js at the end of the document.
-- Keep the presentation usable by opening the HTML file directly in a browser when possible.
 - Keep layouts flat, clean, and left-aligned by default.
 - Vary layouts across the presentation: do not repeat the same title-plus-bullets structure.
 - Use content slides for substance and Y-symbol backgrounds for title, divider, statement, or closing moments.
 - Include visual evidence where appropriate: charts, screenshots, product images, diagrams, or simple structured layouts.
 - Avoid decorative lines, shadows, gradients, generic palettes, and text-only filler slides.
-- Use semantic HTML and readable CSS. Keep slide content in reveal.js `<section>` elements and keep supporting styles organized in the document head or a nearby stylesheet if the user requested multiple files.
 - Make slides responsive enough that text remains legible and does not overlap at common browser window sizes.
 
 ## Completion Criteria
@@ -117,7 +115,7 @@ Yuma presentations should feel editorial, spacious, and confident. Use strong le
 A Yuma presentation is not done until:
 
 - The presentation follows `yuma-design-system` brand guidance.
-- The HTML file uses reveal.js from a CDN and initializes successfully.
+- The HTML file has been created or edited using the `revealjs` workflow.
 - A content check catches no missing or leftover placeholder text.
 - The rendered presentation has been visually inspected in a browser or browser screenshot.
 - Any visual issues found during inspection have been fixed and rechecked.
