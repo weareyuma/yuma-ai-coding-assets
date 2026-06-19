@@ -16,6 +16,8 @@ This skill depends on two other skills:
 
 When creating a presentation, load and follow both dependency skills. Do not restate or override their source-of-truth instructions here.
 
+When verification requires installing dependencies such as Playwright or browser assets, treat them as normal workspace dependencies after user permission. Do not install them as temporary or no-save packages, and do not remove installed dependencies after the current agent loop. Leave cleanup to the user unless they explicitly ask for it.
+
 ## Workflow
 
 1. Establish the presentation goal, audience, source material, required output filename, and any constraints from the user.
