@@ -19,14 +19,14 @@ Verify all required files exist:
 - [ ] `specs/Vision.md`
 - [ ] `specs/PRD.md`
 - [ ] `specs/Architecture/README.md`
-- [ ] `specs/Glossary.md`
-- [ ] `specs/Changelog.md`
 - [ ] `specs/decisions/` directory
 - [ ] `specs/tickets/` directory
 
 Report any missing files. Suggest running `specs-setup` if critical files are absent.
 
-If the project is event-driven, API-heavy, multi-package, or persistence-heavy, also check whether optional architecture sub-documents such as `specs/Architecture/data-model.md` or other topic-specific architecture docs would improve clarity.
+Also note whether optional documents such as `specs/Glossary.md` exist when the project appears to need them.
+
+If the project is event-driven, API-heavy, multi-package, or persistence-heavy, also check whether an optional architecture sub-document would materially improve clarity.
 
 ### 2. Document Quality
 
@@ -37,9 +37,8 @@ For each project-level document, check:
 | `Vision.md`              | Has vision statement, problem statement, target audience, success metrics, and milestones?                            |
 | `PRD.md`                 | Has functional requirements, non-functional requirements, and scope? Are requirements numbered (`FR-1`, `FR-2`, ...)? |
 | `Architecture/README.md` | Has system overview, key components, and tech stack? Links to sub-documents if they exist?                            |
-| `Glossary.md`            | Has at least a few terms? Are terms used consistently in other documents?                                             |
-| `Changelog.md`           | Is it up to date with recent completed tickets?                                                                       |
-| `README.md`              | Does the active tickets table match actual ticket statuses? Is the last-updated date recent?                          |
+| `Glossary.md`            | If present, are terms used consistently in other documents?                                                           |
+| `README.md`              | Is it stable navigation rather than a manually maintained dashboard?                                                   |
 
 Flag documents that are empty templates or still contain placeholder content.
 
@@ -53,8 +52,8 @@ If these optional architecture documents exist, also check:
 
 Check that documents reference each other correctly:
 
-- **README dashboard vs. reality**: Do the Active Tickets and Recently Completed tables match ticket statuses from `Spec.md` frontmatter?
-- **Glossary usage**: Scan `Vision.md`, `PRD.md`, and architecture docs for domain terms. Are they defined in the Glossary?
+- **Ticket state**: Do ticket statuses from `Spec.md` frontmatter accurately reflect the work state?
+- **Glossary usage**: If `Glossary.md` exists, scan `Vision.md`, `PRD.md`, and architecture docs for domain terms. Are they defined consistently?
 - **Architecture sub-documents**: If `Architecture/README.md` links to sub-documents, do those files exist?
 
 ### 4. Drift Detection
@@ -84,22 +83,21 @@ Summarize findings in three categories:
 
 - stale tickets
 - unresolved open questions
-- README dashboard out of sync
 - empty or placeholder documents
 
 **Suggestion** — Improvements for completeness:
 
-- missing Glossary terms
+- missing Glossary terms when domain vocabulary is unclear and `Glossary.md` exists or would materially improve future work
 - tickets without `Findings.md` that clearly involved durable assumptions, frictions, or follow-up candidates
 - architecture that could benefit from sub-documents
-- missing `data-model.md` or other architecture docs for non-trivial boundary contracts or persistence shapes
+- architecture that could benefit from a focused optional sub-document for non-trivial boundary contracts or persistence shapes
 
 ### 6. Propose Actions
 
 For each finding, propose a concrete action:
 
 - "Create ADR to document the React-to-Vue migration that happened in ticket 005"
-- "Update `specs/README.md` — tickets 003 and 004 are marked done but still in Active Tickets"
+- "Update ticket frontmatter — tickets 003 and 004 are complete but not marked done"
 - "Ticket 007 has been in-progress for 3 weeks with no updates — ask the owner for status"
 - "Add 'workspace' and 'campaign' to the Glossary — used in PRD but not defined"
 

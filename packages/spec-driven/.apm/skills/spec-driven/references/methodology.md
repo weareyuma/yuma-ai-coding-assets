@@ -12,8 +12,8 @@ When a project has non-trivial entities, cross-module payloads, APIs, events, si
 
 Rules:
 
-- Document stable domain concepts in `Architecture/data-model.md` when the project has meaningful identity, lifecycle, or invariant rules.
-- Document stable boundary contracts in the relevant architecture docs that own them when producers and consumers must stay aligned across modules, packages, services, or persistence boundaries.
+- Document stable domain concepts in an architecture sub-document only when the project has meaningful identity, lifecycle, or invariant rules that span tickets.
+- Document stable boundary contracts in an architecture sub-document only when producers and consumers must stay aligned across modules, packages, services, or persistence boundaries.
 - Do not treat a wire format or persistence encoding as the canonical model unless the project explicitly decides that it is.
 - Do not leave long-lived contract definitions only in a ticket if they matter across more than one implementation pass.
 
@@ -21,15 +21,13 @@ Rules:
 
 ```text
 specs/
-├── README.md                    # Project dashboard and navigation
+├── README.md                    # Stable project navigation
 ├── Vision.md                    # WHY + success frame
 ├── PRD.md                       # WHAT — functional and non-functional requirements
-├── Glossary.md                  # Domain vocabulary
-├── Changelog.md                 # What shipped and when
+├── Glossary.md                  # Optional domain vocabulary
 ├── Architecture/                # Architecture documentation (always a folder)
 │   ├── README.md                # Architecture overview (entry point)
-│   ├── data-model.md            # Optional: canonical entities, identity, invariants
-│   └── <topic>.md               # Sub-documents split by concern
+│   └── <topic>.md               # Optional sub-documents split by concern
 ├── decisions/                   # Architecture Decision Records
 │   ├── ADR-001-<title>.md
 │   └── ...
@@ -46,13 +44,22 @@ specs/
 
 | Document                 | Purpose                                                                                                        | Required     |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------- | ------------ |
-| `README.md`              | Project dashboard. Status, active tickets, recent ADRs, navigation. **Read this first in every conversation.** | Always     |
+| `README.md`              | Stable project navigation and orientation. **Read this first in every conversation.** Current ticket state is derived from ticket files. | Always     |
 | `Vision.md`              | Vision statement, problem statement, target audience, success metrics, and milestones.                        | Always       |
 | `PRD.md`                 | Functional requirements, non-functional requirements, scope, assumptions, and constraints.                    | Always       |
 | `Architecture/README.md` | System overview, components, tech stack, constraints. Links to sub-documents.                                | Always       |
-| `Glossary.md`            | Domain terms and definitions. Keeps language consistent across all documents.                                 | Always       |
-| `Changelog.md`           | Shipped changes in reverse chronological order.                                                               | Always       |
+| `Glossary.md`            | Domain terms and definitions. Create it only when shared vocabulary needs explicit alignment.                 | Optional     |
 | `ADR-NNN-<title>.md`     | Records a decision that changed Vision, PRD, or Architecture.                                                | Per decision |
+
+## Low-Conflict Write Policy
+
+Specs are often edited across multiple branches. Keep shared files stable and push routine work into ticket-local files.
+
+- Do not use `specs/README.md` as a live dashboard. Keep it to stable navigation and project orientation.
+- Do not maintain active-ticket tables, recently completed tables, latest task summaries, or volatile update dates in project-level specs.
+- Derive ticket status by scanning `specs/tickets/*/Spec.md` frontmatter.
+- Avoid volatile metadata. Record stable lifecycle dates such as ticket creation and completion only.
+- Prefer append-style ticket updates where practical, especially for findings and decisions.
 
 ## Ticket-Level Documents
 
@@ -76,7 +83,7 @@ The `Architecture/` folder starts with a single `README.md` as the entry point. 
 - **Never nest deeper than one level** within `Architecture/`. If you need sub-folders, the architecture docs are too detailed — summarize and elevate.
 - **Keep each file focused** on one architectural concern.
 
-Recommended sub-documents when the project warrants them:
+Optional sub-documents when the project warrants them:
 
 - `Architecture/data-model.md` — use when domain entities, identity, lifecycle, or invariants span multiple modules or tickets
 - other topic-specific architecture docs — use when signals, events, APIs, shared structs, renderer inputs, or persisted boundary shapes must stay aligned across producers and consumers
@@ -106,7 +113,7 @@ status: research | specifying | open-questions | planned | in-progress | done | 
 jira: "" # Optional: Jira issue key (e.g., YAI-042)
 owner: "" # Who is responsible
 created: YYYY-MM-DD
-updated: YYYY-MM-DD
+completed: "" # Set to YYYY-MM-DD when status becomes done
 ---
 ```
 
@@ -135,7 +142,7 @@ Research → Specify → Plan → Implement → Finish Review → Done
 | Plan          | `Plan.md`                                                  | **Yes — user must confirm `Plan.md`**    |
 | Implement     | Code, tests, `Plan.md`, `Findings.md`                      | Per task as appropriate                  |
 | Finish Review | Review notes, `Findings.md`, any factual spec drift corrections | **Yes — user confirms closeout direction** |
-| Done          | Ticket `Spec.md` status, project `README.md`, `Changelog.md` | **Yes — user confirms completion**       |
+| Done          | Ticket `Spec.md` status and completion date                 | **Yes — user confirms completion**       |
 
 **Any participant (human or agent) can execute any phase.** The lifecycle defines the order, not who does what.
 

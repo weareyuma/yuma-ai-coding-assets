@@ -37,7 +37,7 @@ Read the project-level docs needed to judge the ticket correctly:
 2. `specs/Vision.md`
 3. `specs/PRD.md`
 4. `specs/Architecture/README.md`
-5. Relevant architecture sub-documents such as `data-model.md` or other topic-specific architecture docs when the ticket touches stable entities, public contracts, or persisted shapes
+5. Relevant architecture sub-documents when they exist and the ticket touches stable entities, public contracts, or persisted shapes
 
 If these documents contradict each other, flag that before reviewing the ticket implementation.
 
@@ -109,7 +109,7 @@ Allowed without extra confirmation:
 
 - create or update `Findings.md` when the review uncovers durable context worth preserving
 - correct **factual drift** in `Spec.md`, `Plan.md`, or project-level `specs/` docs when the completed ticket already established the shipped reality and the change does not introduce a new product or architecture decision
-- if the ticket is ready to close, update the ticket `Spec.md`, `specs/README.md`, and `specs/Changelog.md` to reflect the shipped outcome of the current ticket when appropriate
+- if the ticket is ready to close, update the ticket `Spec.md` to reflect the shipped outcome of the current ticket when appropriate
 
 Stop and ask the user before making any other changes, including:
 
@@ -135,9 +135,7 @@ Use this when:
 Actions:
 
 1. Update `Findings.md` if needed.
-2. Mark the ticket `done` in `Spec.md` and update the `updated` date.
-3. Update `specs/README.md` to move the ticket into the completed section.
-4. Update `specs/Changelog.md` based on the shipped outcome of the current ticket when appropriate.
+2. Mark the ticket `done` in `Spec.md` and set `completed` if that field exists.
 
 #### Close With Follow-Up
 
@@ -146,8 +144,7 @@ Use this when the current ticket satisfies its spec, but the review discovered w
 Actions:
 
 1. Update `Findings.md` with the follow-up candidate and a `Follow-up needed` disposition.
-2. Mark the current ticket `done` in `Spec.md` and update the project dashboard.
-3. Update `specs/Changelog.md` based on the shipped outcome of the current ticket when appropriate.
+2. Mark the current ticket `done` in `Spec.md` and set `completed` if that field exists.
 4. Report the suggested follow-up work to the user and ask for confirmation before creating any new ticket or broader docs.
 
 #### Changes Required

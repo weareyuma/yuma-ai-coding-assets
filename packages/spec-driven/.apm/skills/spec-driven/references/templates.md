@@ -11,37 +11,15 @@ Complete templates for every document in the spec-driven methodology.
 
 > <One-line project description>
 
-## Status
-
-| Metric | Value |
-|--------|-------|
-| Active tickets | 0 |
-| Last updated | YYYY-MM-DD |
-
-## Active Tickets
-
-| # | Title | Status | Owner |
-|---|-------|--------|-------|
-
-## Recently Completed
-
-| # | Title | Completed |
-|---|-------|-----------|
-
-## Recent Decisions
-
-| ADR | Title | Date |
-|-----|-------|------|
-
 ## Navigation
 
 - [Vision](Vision.md)
 - [PRD](PRD.md)
 - [Architecture](Architecture/README.md)
-- [Glossary](Glossary.md)
-- [Changelog](Changelog.md)
 - [Decisions](decisions/)
 - [Tickets](tickets/)
+
+Ticket status is derived from `tickets/*/Spec.md` frontmatter.
 ```
 
 ---
@@ -213,26 +191,6 @@ Link to other architecture docs that expose these entities at system boundaries.
 
 ---
 
-## specs/Changelog.md
-
-```markdown
-# Changelog
-
-All notable changes to this project are documented here. Entries are in reverse chronological order.
-
-## [Unreleased]
-
-### Added
-
-### Changed
-
-### Fixed
-
-### Removed
-```
-
----
-
 ## specs/decisions/ADR-NNN-\<title\>.md
 
 ```markdown
@@ -306,7 +264,7 @@ title: "<Descriptive title>"
 status: research
 owner: ""
 created: YYYY-MM-DD
-updated: YYYY-MM-DD
+completed: ""
 ---
 
 # Spec: <Title>

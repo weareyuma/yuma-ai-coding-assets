@@ -13,7 +13,7 @@ Create and execute tickets through the spec-driven lifecycle, or resume work on 
 
 1. Verify `specs/` folder exists with `Vision.md`, `PRD.md`, and `Architecture/README.md`. If missing, prompt the user to run the [specs-setup](../specs-setup/SKILL.md) skill first.
 2. Read `specs/README.md`, then `specs/Vision.md`, `specs/PRD.md`, and `specs/Architecture/README.md` to understand the project context.
-3. Read architecture sub-documents relevant to your ticket such as `specs/Architecture/data-model.md`.
+3. Read any existing architecture sub-documents relevant to your ticket.
 
 ---
 
@@ -49,7 +49,7 @@ title: "<Descriptive title>"
 status: research
 owner: ""
 created: YYYY-MM-DD
-updated: YYYY-MM-DD
+completed: ""
 ---
 ```
 
@@ -68,7 +68,7 @@ Ask the user which ticket to continue, or identify it from conversation context:
 - ticket number such as `003`
 - description such as `the auth ticket` by scanning ticket titles
 
-If ambiguous, list active tickets from `specs/README.md` and ask the user to pick one.
+If ambiguous, scan `specs/tickets/` for active tickets and ask the user to pick one.
 
 ### 2. Read Ticket State
 
@@ -274,7 +274,7 @@ User validation is required at the spec, plan, and closeout checkpoints.
 2. Make a final pass over `Plan.md` and `Findings.md`:
    - ensure completed checklist items are checked off or clearly superseded
    - ensure `Findings.md` captures durable assumptions, frictions, follow-up candidates, residual risks, and test gaps with clear dispositions
-3. If the ticket affects data shape, update `specs/Architecture/data-model.md` to classify the change explicitly:
+3. If the ticket affects data shape and the project has a relevant architecture sub-document, update it to classify the change explicitly.
 4. Do **not** mark the ticket `done` yet.
 5. Ask the user to start a **fresh conversation** and run the [specs-finish-ticket](../specs-finish-ticket/SKILL.md) skill for independent review.
 
@@ -290,7 +290,7 @@ Requirements often change during implementation. When they do:
 2. Update `Plan.md` so the approach, sequencing, and checklist still reflect reality.
 3. Update `Findings.md` if the change revealed an assumption, workaround, follow-up candidate, or residual risk worth preserving.
 4. If the change affects `Vision.md`, `PRD.md`, or architecture docs, create an ADR.
-5. If the change alters canonical entities, boundary contracts, or serialization policy, update `specs/Architecture/data-model.md` and/or the relevant architecture docs when those definitions are part of the long-lived system design.
+5. If the change alters canonical entities, boundary contracts, or serialization policy, update the relevant architecture docs when those definitions are part of the long-lived system design.
 6. Re-validate with the user if the change is significant.
 
 The spec is always the source of truth for the ticket, not the code. Keep it in sync.
