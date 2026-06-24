@@ -32,8 +32,7 @@ Check which of these exist:
 - [ ] `specs/Architecture/` directory
 - [ ] `specs/Architecture/README.md`
 - [ ] `specs/Architecture/data-model.md` (optional)
-- [ ] `specs/Glossary.md`
-- [ ] `specs/Changelog.md`
+- [ ] `specs/Glossary.md` (optional)
 - [ ] `specs/decisions/` directory
 - [ ] `specs/tickets/` directory
 
@@ -52,11 +51,9 @@ Create in this order:
 5. `specs/Vision.md`
 6. `specs/PRD.md`
 7. `specs/Architecture/README.md`
-8. `specs/Glossary.md`
-9. `specs/Changelog.md`
-10. `specs/README.md` (last, because it links to everything above)
+8. `specs/README.md` (last, because it links to everything above)
 
-Do **not** create optional architecture sub-documents by default. Decide whether `specs/Architecture/data-model.md` or other topic-specific docs are needed during architecture setup.
+Do **not** create optional documents by default. Decide whether `specs/Glossary.md`, `specs/Architecture/data-model.md`, or other topic-specific architecture docs are needed during setup.
 
 ### 3. Populate Vision.md
 
@@ -98,7 +95,7 @@ If the project is **new** with no code yet, work with the user to define the tar
 
 Remember: keep it high-level. The architecture entry point should give someone a clear mental model of the system in under 5 minutes of reading. Split into sub-documents only when a section exceeds ~200 lines.
 
-If the project has any of the following, strongly consider creating optional architecture sub-documents now:
+If the project has any of the following, consider creating optional architecture sub-documents now:
 
 - non-trivial domain entities with identity or lifecycle rules
 - signals, events, APIs, or shared structs crossing module or package boundaries
@@ -118,16 +115,15 @@ For boundary-oriented docs, explicitly distinguish:
 
 If those differ, document the difference rather than collapsing them into one vague "schema".
 
-### 6. Populate Glossary
+### 6. Consider Glossary
 
-Scan `Vision.md`, `PRD.md`, and `Architecture/README.md` for domain-specific terms. Draft definitions and **ask the user to confirm them.** Even a small initial glossary (5-10 terms) is valuable — it can grow over time.
+If the project uses domain-specific terms that are likely to confuse future work, offer to create `Glossary.md`. Draft definitions from `Vision.md`, `PRD.md`, and `Architecture/README.md`, then **ask the user to confirm them.** Skip the glossary when terminology is straightforward.
 
 ### 7. Finalize README
 
 Update `specs/README.md` with:
 
 - the project name and one-line description
-- current status such as "Setting up" or "No active tickets"
 - working navigation links to all created documents
 - links to `Architecture/data-model.md` and any other architecture sub-documents if they were created
 
