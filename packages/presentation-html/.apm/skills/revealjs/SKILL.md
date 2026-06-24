@@ -10,7 +10,7 @@ Use this skill for the technical mechanics of reveal.js presentations. It does n
 ## Output Contract
 
 - Prefer a single `.html` file with embedded CSS and reveal.js loaded from a public CDN.
-- Do not require `npm install`, local build tools, or a dev server to create the presentation unless the user explicitly asks for them. Browser verification is separate and may require installing Node, Playwright, and Chromium.
+- Do not require `npm install`, local build tools, or a dev server to create the presentation unless the user explicitly asks for them. Browser verification is separate and may require installing Node, Playwright, and Chromium; once installed with user permission, leave those dependencies in place unless the user explicitly asks to remove them.
 - Use direct HTML inside reveal.js sections for designed presentations. Use Markdown slides only when the user specifically asks for Markdown-driven slides.
 - Keep all reveal.js CDN assets on the same major version. Avoid mixing core CSS, theme CSS, scripts, and plugins from different versions.
 - Use relative paths for local images and assets so the HTML file can move with its asset folder.
@@ -38,12 +38,15 @@ brew install node
 # If the workspace has package.json
 npm install --save-dev playwright
 
-# If the workspace has no package.json and the user wants a temporary install
-npm install --no-save playwright
+# If the workspace has no package.json, create one and save Playwright as a dev dependency
+npm init -y
+npm install --save-dev playwright
 
 # Install the Playwright-managed Chromium browser
 npx playwright install chromium
 ```
+
+Do not use temporary or no-save installs for verification tooling. Do not remove installed dependencies, generated lockfiles, or Playwright-managed browser assets after the current agent loop; leave cleanup to the user unless they explicitly request it.
 
 If the user declines installation, use an available browser tool for interactive inspection. Use PDF export only as a secondary artifact or last-resort review path, and clearly report that it is not equivalent to live browser screenshot QA.
 
