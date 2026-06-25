@@ -47,3 +47,11 @@ Check whether the list is current without writing changes:
 ```bash
 uv run scripts/update_root_apm.py --check
 ```
+
+Always follow up with
+
+```bash
+apm pack
+```
+
+which will generate `.claude-plugin/`.
