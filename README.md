@@ -33,3 +33,17 @@ For example, install the spec-driven skills with
 ```bash
 apm install spec-driven@yuma
 ```
+
+# Maintenance
+
+Regenerate the root marketplace package list after adding or removing a package:
+
+```bash
+uv run scripts/update_root_apm.py
+```
+
+Check whether the list is current without writing changes:
+
+```bash
+uv run scripts/update_root_apm.py --check
+```
