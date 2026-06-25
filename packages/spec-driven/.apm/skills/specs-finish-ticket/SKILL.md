@@ -62,7 +62,7 @@ Build a simple mental model of:
 
 Inspect the actual implementation and tests.
 
-- Use `Plan.md` and the codebase to find the touched files.
+- Use `Plan.md` and the code base to find the touched files.
 - Inspect the current code, not just the ticket narrative.
 - If work is uncommitted, inspect the current git changes as part of the evidence.
 - If needed, read file history or recent commits to understand whether the code reflects the completed ticket or unrelated drift.
@@ -86,7 +86,7 @@ Inspect the actual implementation and tests.
 
 - Does the implementation solve the root problem rather than patching symptoms?
 - Is the scope tight and coherent?
-- Are naming, ownership, and structure consistent with the surrounding codebase?
+- Are naming, ownership, and structure consistent with the surrounding code base?
 - Is there dead compatibility code, abandoned scaffolding, or undocumented workaround logic?
 
 #### D. Test Quality

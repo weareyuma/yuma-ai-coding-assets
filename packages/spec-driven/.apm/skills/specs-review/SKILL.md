@@ -59,7 +59,7 @@ Check that documents reference each other correctly:
 
 ### 4. Drift Detection
 
-Compare specs against the codebase:
+Compare specs against the code base:
 
 - Does the tech stack in `Architecture/README.md` match the actual dependencies?
 - Do the key components described in architecture docs match the actual project structure?
@@ -67,7 +67,7 @@ Compare specs against the codebase:
 - Where architecture docs define long-lived boundary contracts, do those contracts still match the code?
 - Where `data-model.md` exists, do documented identity rules and invariants still match the code and current architecture?
 
-This step requires codebase analysis. Flag potential drift but note that **confirmation with the user is needed** — apparent drift may be intentional and just not yet documented.
+This step requires code base analysis. Flag potential drift but note that **confirmation with the user is needed** — apparent drift may be intentional and just not yet documented.
 
 ### 5. Report
 
