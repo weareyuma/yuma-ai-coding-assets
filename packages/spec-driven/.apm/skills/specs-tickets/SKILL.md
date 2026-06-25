@@ -82,7 +82,7 @@ Compare the ticket's documents against the current state of:
 
 - **`specs/Vision.md`** and **`specs/PRD.md`** — have requirements or success expectations changed since this ticket was written?
 - **`specs/Architecture/README.md`** — has the architecture evolved?
-- **the codebase** — has relevant code changed since the ticket was last worked on?
+- **the code base** — has relevant code changed since the ticket was last worked on?
 
 If drift is detected:
 
@@ -139,7 +139,7 @@ User validation is required at the spec, plan, and closeout checkpoints.
 
 **Goal**: Understand the problem space and gather information needed to write a good spec.
 
-1. Investigate the codebase, existing documentation, and any external resources relevant to the ticket.
+1. Investigate the code base, existing documentation, and any external resources relevant to the ticket.
 2. Identify technical constraints, existing patterns, and potential approaches.
 3. If the ticket may affect domain entities or boundary payloads, identify:
    - the canonical domain concepts involved
