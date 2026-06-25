@@ -1,0 +1,14 @@
+name: token-efficiency
+version: 1.0.0
+description: Instructions aimed at improving the efficiency of token usage in AI models.
+author: vincent.min
+# Which agent platforms to deploy to.
+# Resolution order: --target flag > this field > auto-detect from filesystem.
+# Accepted values: copilot, claude, cursor, opencode, codex, gemini, windsurf, all
+targets:
+- copilot
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}
