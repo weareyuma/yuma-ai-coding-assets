@@ -6,6 +6,12 @@
   },
   "plugins": [
     {
+      "name": "code-quality",
+      "description": "Instructions aimed at improving code quality.",
+      "version": "1.0.0",
+      "source": "./packages/code-quality"
+    },
+    {
       "name": "code-simplifier",
       "description": "Simplify code skill",
       "version": "1.0.0",
@@ -18,22 +24,34 @@
       "source": "./packages/ogsm"
     },
     {
-      "name": "presentation-pptx",
-      "description": "Let agents create yuma-branded pptx presentations",
-      "version": "1.0.0",
-      "source": "./packages/presentation-pptx"
-    },
-    {
       "name": "presentation-html",
       "description": "Let agents create yuma-branded html reveal.js presentations",
       "version": "1.0.0",
       "source": "./packages/presentation-html"
     },
     {
+      "name": "presentation-pptx",
+      "description": "Let agents create yuma-branded pptx presentations",
+      "version": "1.0.0",
+      "source": "./packages/presentation-pptx"
+    },
+    {
+      "name": "python-best-practices",
+      "description": "Best practices for Python development",
+      "version": "1.0.0",
+      "source": "./packages/python-best-practices"
+    },
+    {
       "name": "spec-driven",
       "description": "Lightweight spec-driven approach",
       "version": "1.0.0",
       "source": "./packages/spec-driven"
+    },
+    {
+      "name": "token-efficiency",
+      "description": "Instructions aimed at improving the efficiency of token usage in AI models.",
+      "version": "1.0.0",
+      "source": "./packages/token-efficiency"
     },
     {
       "name": "yuma-design-system",
