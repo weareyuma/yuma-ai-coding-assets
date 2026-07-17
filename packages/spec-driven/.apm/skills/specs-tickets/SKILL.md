@@ -25,6 +25,8 @@ Determine whether the user wants to **create a new ticket** or **continue an exi
 - If the user references an existing ticket, go to the Resume Ticket section below.
 - If unclear, ask the user.
 
+Before revising ticket documents or starting implementation, ask the user to confirm that they want those changes made unless their message clearly directs you to proceed. Treat exploratory questions, status checks, and discussion as requests to analyze and advise, not as authorization to edit or implement.
+
 ---
 
 ## New Ticket
