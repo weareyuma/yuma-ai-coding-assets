@@ -17,7 +17,7 @@ Read the Jira project key from `.jira.json` at the Git repository root:
 
 ```json
 {
-	"projectKey": "ABC"
+  "projectKey": "ABC"
 }
 ```
 
@@ -32,6 +32,7 @@ Read the Jira project key from `.jira.json` at the Git repository root:
 
 - Discover commands and flags with `acli jira --help` and progressively nested `--help` commands. Do not rely on memorized syntax.
 - Prefer JSON output when the discovered command supports it.
+- `acli` has no documented `--no-pager` flag and may open an internal pager when stdout is a terminal. For commands that cannot prompt for input, force non-interactive output with `set -o pipefail; acli ... | cat`. Do not pipe commands that may prompt for confirmation or credentials. This applies to `acli jira workitem view`.
 - Use the least destructive command that satisfies the request.
 - Before every operation that creates, changes, transitions, comments on, assigns, archives, or deletes Jira data, show the exact intended action and ask the user for explicit confirmation.
 - Execute a write only after receiving that confirmation. Read-only searches and views do not require confirmation.
