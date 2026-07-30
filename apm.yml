@@ -29,6 +29,8 @@ marketplace:
       source: ./packages/code-quality
     - name: code-simplifier
       source: ./packages/code-simplifier
+    - name: jira
+      source: ./packages/jira
     - name: ogsm
       source: ./packages/ogsm
     - name: presentation-html

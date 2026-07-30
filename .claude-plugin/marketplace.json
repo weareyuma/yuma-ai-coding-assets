@@ -18,6 +18,12 @@
       "source": "./packages/code-simplifier"
     },
     {
+      "name": "jira",
+      "description": "Allow agents to interact with jira",
+      "version": "1.0.0",
+      "source": "./packages/jira"
+    },
+    {
       "name": "ogsm",
       "description": "OGSM (Objective, Goals, Strategies, Measures) skill",
       "version": "1.0.0",
