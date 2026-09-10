@@ -4,12 +4,39 @@ description: Allow agents to interact with jira
 author: vincent.min
 targets:
 - copilot
+- vscode
 dependencies:
   apm: []
   mcp:
+  # Self-defined rather than the registry entry so the server name and endpoint
+  # are identical on every harness; the registry publishes no pinnable version.
   - name: atlassian
     registry: false
     transport: http
-    url: https://mcp.atlassian.com/v2/mcp
+    # v1 and v2 expose different tool sets, not just different URLs. v2 is the
+    # coarse discover/executeRead/executeWrite/executeDestructive surface and
+    # errors on every call for this site; v1 is granular and has no delete
+    # tools at all. Tool names below are v1-only.
+    url: https://mcp.atlassian.com/v1/mcp
+    # Allowlist. Enforced by harnesses that support it (Copilot CLI, Claude
+    # Code); VS Code ignores it -- see README.
+    tools:
+    - atlassianUserInfo
+    - getAccessibleAtlassianResources
+    - getVisibleJiraProjects
+    - getJiraIssue
+    - searchJiraIssuesUsingJql
+    - getJiraProjectIssueTypesMetadata
+    - getJiraIssueTypeMetaWithFields
+    - getTransitionsForJiraIssue
+    - lookupJiraAccountId
+    - getIssueLinkTypes
+    - getJiraIssueRemoteIssueLinks
+    - createJiraIssue
+    - editJiraIssue
+    - transitionJiraIssue
+    - addCommentToJiraIssue
+    - addWorklogToJiraIssue
+    - createIssueLink
 includes: auto
 scripts: {}
