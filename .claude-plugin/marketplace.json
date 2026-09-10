@@ -60,6 +60,12 @@
       "source": "./packages/token-efficiency"
     },
     {
+      "name": "verified-scout",
+      "description": "Verified small-model repository scouting and cheap-first work routing",
+      "version": "1.0.0",
+      "source": "./packages/verified-scout"
+    },
+    {
       "name": "yuma-design-system",
       "description": "APM project for yuma-design-system",
       "version": "1.0.0",

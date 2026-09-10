@@ -43,5 +43,7 @@ marketplace:
       source: ./packages/spec-driven
     - name: token-efficiency
       source: ./packages/token-efficiency
+    - name: verified-scout
+      source: ./packages/verified-scout
     - name: yuma-design-system
       source: ./packages/yuma-design-system
