@@ -1,0 +1,10 @@
+name: motion-video
+version: 1.0.0
+description: Let agents create yuma-branded motion videos (HTML timeline to 4K MP4, with voice-over and music)
+author: hugo.dendievel
+dependencies:
+  apm:
+  - ../yuma-design-system
+  mcp: []
+includes: auto
+scripts: {}

@@ -1,0 +1,353 @@
+lockfile_version: '1'
+apm_version: 0.32.0
+dependencies:
+- repo_url: _local/yuma-design-system
+  name: yuma-design-system
+  version: 1.0.0
+  package_type: apm_package
+  deployed_files:
+  - .agents/skills/yuma-design-system
+  - .agents/skills/yuma-design-system/SKILL.md
+  - .agents/skills/yuma-design-system/references/Yuma_Symbol_Black-RGB.png
+  - .agents/skills/yuma-design-system/references/Yuma_Symbol_Black-RGB.svg
+  - .agents/skills/yuma-design-system/references/Yuma_Symbol_White-RGB.png
+  - .agents/skills/yuma-design-system/references/Yuma_Symbol_White-RGB.svg
+  - .agents/skills/yuma-design-system/references/Yuma_Wordmark_Black-RGB.png
+  - .agents/skills/yuma-design-system/references/Yuma_Wordmark_Black-RGB.svg
+  - .agents/skills/yuma-design-system/references/Yuma_Wordmark_White-RGB.png
+  - .agents/skills/yuma-design-system/references/Yuma_Wordmark_White-RGB.svg
+  - .agents/skills/yuma-design-system/references/Yuma_logo_Black-RGB.png
+  - .agents/skills/yuma-design-system/references/Yuma_logo_Black-RGB.svg
+  - .agents/skills/yuma-design-system/references/Yuma_logo_White-RGB.png
+  - .agents/skills/yuma-design-system/references/Yuma_logo_White-RGB.svg
+  - .agents/skills/yuma-design-system/references/yuma-bg-closing-pink.png
+  - .agents/skills/yuma-design-system/references/yuma-bg-content-subtle.png
+  - .agents/skills/yuma-design-system/references/yuma-bg-section-green.png
+  - .agents/skills/yuma-design-system/references/yuma-bg-title-green.png
+  deployed_file_hashes:
+    .agents/skills/yuma-design-system/SKILL.md: sha256:a21cbb989f147317719089a8c5a72cf889393c9154505d14ae90899dc3a4c2cf
+    .agents/skills/yuma-design-system/references/Yuma_Symbol_Black-RGB.png: sha256:c81306ce82f8cbb8ef9247e8b52560330e7bfa245c81a06207391a4c20afc73f
+    .agents/skills/yuma-design-system/references/Yuma_Symbol_Black-RGB.svg: sha256:a8b4c53a01feb78d9b5903ac0358d9e8d15eccd28431496295d181d2e5b28d97
+    .agents/skills/yuma-design-system/references/Yuma_Symbol_White-RGB.png: sha256:963e778b769334958e5e79d164f4aeeecb3a1959ca1ce3ae4282c0b8ceacf64b
+    .agents/skills/yuma-design-system/references/Yuma_Symbol_White-RGB.svg: sha256:2a092eeee7f536f5f1e225870b61b3ea1a357c06e1d022526a280e404264f47e
+    .agents/skills/yuma-design-system/references/Yuma_Wordmark_Black-RGB.png: sha256:8ab5862031b4511fd2d0b4136f98c065c8f80e7da8eaa29b181cc1ee87bec9d8
+    .agents/skills/yuma-design-system/references/Yuma_Wordmark_Black-RGB.svg: sha256:280f1280fb109b79119fa1672ff74257316feabfbd47f38acfbe3452bb355fc2
+    .agents/skills/yuma-design-system/references/Yuma_Wordmark_White-RGB.png: sha256:087ac14511b32cd48496775d74da4ab4ada8df9719b8685337b8da26e2f0c258
+    .agents/skills/yuma-design-system/references/Yuma_Wordmark_White-RGB.svg: sha256:838c22f342c12373999ba4c641dabdd40af2ae5ce0681ba7b74b975ee874c260
+    .agents/skills/yuma-design-system/references/Yuma_logo_Black-RGB.png: sha256:37072f337864e34c340b1a4b896c1f91e526e061ba9ab05496c42629161c93d4
+    .agents/skills/yuma-design-system/references/Yuma_logo_Black-RGB.svg: sha256:c87304844133382e757a2e98a78d57ff7ec9148eb4c639dcc6e61088913949e5
+    .agents/skills/yuma-design-system/references/Yuma_logo_White-RGB.png: sha256:7f69cdf646463827cf46812dcb46cce454db64a3bd764db3621bcde6843298a5
+    .agents/skills/yuma-design-system/references/Yuma_logo_White-RGB.svg: sha256:0d7a36d6a1e83b773a75ba9049f02cc6cf7a8204c7086ffc48fc976680735fb6
+    .agents/skills/yuma-design-system/references/yuma-bg-closing-pink.png: sha256:bedc75cea24671ca1872e549beb59fc308fb9688328360d2292347955a210fae
+    .agents/skills/yuma-design-system/references/yuma-bg-content-subtle.png: sha256:4b4c2f665179900a4e37715417d6480e2efb959dab03af7ee715244c99bbf8d6
+    .agents/skills/yuma-design-system/references/yuma-bg-section-green.png: sha256:0109bbee501427f42e254761000a86ba64202a79b6cec53c0a57dbbc312da99d
+    .agents/skills/yuma-design-system/references/yuma-bg-title-green.png: sha256:3d6f16cf842ba927f2815bbebd6cfab9ec8b548d762fcd4f83705d257d8da385
+  source: local
+  local_path: ../yuma-design-system
+deployments:
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/yuma-design-system
+  runtime: null
+  scope: project
+  owners:
+  - ../yuma-design-system
+  active_owner: ../yuma-design-system
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/yuma-design-system/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ../yuma-design-system
+  active_owner: ../yuma-design-system
+  content_hash: sha256:a21cbb989f147317719089a8c5a72cf889393c9154505d14ae90899dc3a4c2cf
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/yuma-design-system/references/Yuma_Symbol_Black-RGB.png
+  runtime: null
+  scope: project
+  owners:
+  - ../yuma-design-system
+  active_owner: ../yuma-design-system
+  content_hash: sha256:c81306ce82f8cbb8ef9247e8b52560330e7bfa245c81a06207391a4c20afc73f
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/yuma-design-system/references/Yuma_Symbol_Black-RGB.svg
+  runtime: null
+  scope: project
+  owners:
+  - ../yuma-design-system
+  active_owner: ../yuma-design-system
+  content_hash: sha256:a8b4c53a01feb78d9b5903ac0358d9e8d15eccd28431496295d181d2e5b28d97
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/yuma-design-system/references/Yuma_Symbol_White-RGB.png
+  runtime: null
+  scope: project
+  owners:
+  - ../yuma-design-system
+  active_owner: ../yuma-design-system
+  content_hash: sha256:963e778b769334958e5e79d164f4aeeecb3a1959ca1ce3ae4282c0b8ceacf64b
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/yuma-design-system/references/Yuma_Symbol_White-RGB.svg
+  runtime: null
+  scope: project
+  owners:
+  - ../yuma-design-system
+  active_owner: ../yuma-design-system
+  content_hash: sha256:2a092eeee7f536f5f1e225870b61b3ea1a357c06e1d022526a280e404264f47e
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/yuma-design-system/references/Yuma_Wordmark_Black-RGB.png
+  runtime: null
+  scope: project
+  owners:
+  - ../yuma-design-system
+  active_owner: ../yuma-design-system
+  content_hash: sha256:8ab5862031b4511fd2d0b4136f98c065c8f80e7da8eaa29b181cc1ee87bec9d8
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/yuma-design-system/references/Yuma_Wordmark_Black-RGB.svg
+  runtime: null
+  scope: project
+  owners:
+  - ../yuma-design-system
+  active_owner: ../yuma-design-system
+  content_hash: sha256:280f1280fb109b79119fa1672ff74257316feabfbd47f38acfbe3452bb355fc2
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/yuma-design-system/references/Yuma_Wordmark_White-RGB.png
+  runtime: null
+  scope: project
+  owners:
+  - ../yuma-design-system
+  active_owner: ../yuma-design-system
+  content_hash: sha256:087ac14511b32cd48496775d74da4ab4ada8df9719b8685337b8da26e2f0c258
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/yuma-design-system/references/Yuma_Wordmark_White-RGB.svg
+  runtime: null
+  scope: project
+  owners:
+  - ../yuma-design-system
+  active_owner: ../yuma-design-system
+  content_hash: sha256:838c22f342c12373999ba4c641dabdd40af2ae5ce0681ba7b74b975ee874c260
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/yuma-design-system/references/Yuma_logo_Black-RGB.png
+  runtime: null
+  scope: project
+  owners:
+  - ../yuma-design-system
+  active_owner: ../yuma-design-system
+  content_hash: sha256:37072f337864e34c340b1a4b896c1f91e526e061ba9ab05496c42629161c93d4
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/yuma-design-system/references/Yuma_logo_Black-RGB.svg
+  runtime: null
+  scope: project
+  owners:
+  - ../yuma-design-system
+  active_owner: ../yuma-design-system
+  content_hash: sha256:c87304844133382e757a2e98a78d57ff7ec9148eb4c639dcc6e61088913949e5
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/yuma-design-system/references/Yuma_logo_White-RGB.png
+  runtime: null
+  scope: project
+  owners:
+  - ../yuma-design-system
+  active_owner: ../yuma-design-system
+  content_hash: sha256:7f69cdf646463827cf46812dcb46cce454db64a3bd764db3621bcde6843298a5
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/yuma-design-system/references/Yuma_logo_White-RGB.svg
+  runtime: null
+  scope: project
+  owners:
+  - ../yuma-design-system
+  active_owner: ../yuma-design-system
+  content_hash: sha256:0d7a36d6a1e83b773a75ba9049f02cc6cf7a8204c7086ffc48fc976680735fb6
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/yuma-design-system/references/yuma-bg-closing-pink.png
+  runtime: null
+  scope: project
+  owners:
+  - ../yuma-design-system
+  active_owner: ../yuma-design-system
+  content_hash: sha256:bedc75cea24671ca1872e549beb59fc308fb9688328360d2292347955a210fae
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/yuma-design-system/references/yuma-bg-content-subtle.png
+  runtime: null
+  scope: project
+  owners:
+  - ../yuma-design-system
+  active_owner: ../yuma-design-system
+  content_hash: sha256:4b4c2f665179900a4e37715417d6480e2efb959dab03af7ee715244c99bbf8d6
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/yuma-design-system/references/yuma-bg-section-green.png
+  runtime: null
+  scope: project
+  owners:
+  - ../yuma-design-system
+  active_owner: ../yuma-design-system
+  content_hash: sha256:0109bbee501427f42e254761000a86ba64202a79b6cec53c0a57dbbc312da99d
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/yuma-design-system/references/yuma-bg-title-green.png
+  runtime: null
+  scope: project
+  owners:
+  - ../yuma-design-system
+  active_owner: ../yuma-design-system
+  content_hash: sha256:3d6f16cf842ba927f2815bbebd6cfab9ec8b548d762fcd4f83705d257d8da385
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/motion-video
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/motion-video/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:52fc586eb2fb51d51a0c4dd125baa39532af16d2b31fe7f44c4020d546dd4e4f
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/motion-video/assets/template/.gitignore
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:9cc4c94fe9edbaa29d1028061fb2183e6f8e6002986978b02f7b6bb102e78d27
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/motion-video/assets/template/assets/README.txt
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:a171b9aee5344a34440ca534a12f0457c24dccc451b7a96a6f79c5ebaa531c02
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/motion-video/assets/template/index.html
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:22f3503530d7828c12d98821ac6fe1784a96650e1b92a7285010dd060f925f3d
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/motion-video/assets/template/music.py
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:99c3cf56477fa4559edd5a794b9c17e8b664dd5273c88c8c326afa39d66ae67f
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/motion-video/assets/template/narration.json
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:11531e1efd6dc0f1e03da33fdfe6056d38086eb65bc17f2c0e78f4902a23237c
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/motion-video/assets/template/package.json
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:0cc892be5de4f2de1decbcbdb13f43391ab1d036dda977cc30987c079de9d600
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/motion-video/assets/template/record.mjs
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:23d1c44ebd801254e2731a1e17f95ce4d9646f88478e5bb04b548d2f1f6da604
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/motion-video/assets/template/voice.mjs
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:0a84aa75b95db206057cde7c40cfdba2efcc100e45fe7efa83ff9d0976b0ccfe
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/motion-video/references/audio.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:f3d1f6c10f4dcec3b694619eb06d4525111262da45b7203c38fee912d892dcf0
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/motion-video/references/engine.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:3dff247ee8ea956cb600264e325a43c8e9a1d0b92aa6c9fe67757ba6f3a34c36
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/motion-video/references/storytelling.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:a689f448234b3db668debc5bee9b9455306b77fe75cc62fadaf82a150379a6b2
+local_deployed_files:
+- .agents/skills/motion-video
+- .agents/skills/motion-video/SKILL.md
+- .agents/skills/motion-video/assets/template/.gitignore
+- .agents/skills/motion-video/assets/template/assets/README.txt
+- .agents/skills/motion-video/assets/template/index.html
+- .agents/skills/motion-video/assets/template/music.py
+- .agents/skills/motion-video/assets/template/narration.json
+- .agents/skills/motion-video/assets/template/package.json
+- .agents/skills/motion-video/assets/template/record.mjs
+- .agents/skills/motion-video/assets/template/voice.mjs
+- .agents/skills/motion-video/references/audio.md
+- .agents/skills/motion-video/references/engine.md
+- .agents/skills/motion-video/references/storytelling.md
+local_deployed_file_hashes:
+  .agents/skills/motion-video/SKILL.md: sha256:52fc586eb2fb51d51a0c4dd125baa39532af16d2b31fe7f44c4020d546dd4e4f
+  .agents/skills/motion-video/assets/template/.gitignore: sha256:9cc4c94fe9edbaa29d1028061fb2183e6f8e6002986978b02f7b6bb102e78d27
+  .agents/skills/motion-video/assets/template/assets/README.txt: sha256:a171b9aee5344a34440ca534a12f0457c24dccc451b7a96a6f79c5ebaa531c02
+  .agents/skills/motion-video/assets/template/index.html: sha256:22f3503530d7828c12d98821ac6fe1784a96650e1b92a7285010dd060f925f3d
+  .agents/skills/motion-video/assets/template/music.py: sha256:99c3cf56477fa4559edd5a794b9c17e8b664dd5273c88c8c326afa39d66ae67f
+  .agents/skills/motion-video/assets/template/narration.json: sha256:11531e1efd6dc0f1e03da33fdfe6056d38086eb65bc17f2c0e78f4902a23237c
+  .agents/skills/motion-video/assets/template/package.json: sha256:0cc892be5de4f2de1decbcbdb13f43391ab1d036dda977cc30987c079de9d600
+  .agents/skills/motion-video/assets/template/record.mjs: sha256:23d1c44ebd801254e2731a1e17f95ce4d9646f88478e5bb04b548d2f1f6da604
+  .agents/skills/motion-video/assets/template/voice.mjs: sha256:0a84aa75b95db206057cde7c40cfdba2efcc100e45fe7efa83ff9d0976b0ccfe
+  .agents/skills/motion-video/references/audio.md: sha256:f3d1f6c10f4dcec3b694619eb06d4525111262da45b7203c38fee912d892dcf0
+  .agents/skills/motion-video/references/engine.md: sha256:3dff247ee8ea956cb600264e325a43c8e9a1d0b92aa6c9fe67757ba6f3a34c36
+  .agents/skills/motion-video/references/storytelling.md: sha256:a689f448234b3db668debc5bee9b9455306b77fe75cc62fadaf82a150379a6b2

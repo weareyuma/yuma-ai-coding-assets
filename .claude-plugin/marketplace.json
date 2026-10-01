@@ -24,6 +24,12 @@
       "source": "./packages/jira"
     },
     {
+      "name": "motion-video",
+      "description": "Let agents create yuma-branded motion videos (HTML timeline to 4K MP4, with voice-over and music)",
+      "version": "1.0.0",
+      "source": "./packages/motion-video"
+    },
+    {
       "name": "ogsm",
       "description": "OGSM (Objective, Goals, Strategies, Measures) skill",
       "version": "1.0.0",
