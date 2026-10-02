@@ -1,6 +1,6 @@
 # Telling a Yuma video
 
-This guidance is distilled from the Akgents promo and the review rounds it went through. Treat it as the current house style, and update it when brand owners refine it.
+This guidance is distilled from previous promo videos and the review rounds they went through. Treat it as the current house style, and update it when brand owners refine it.
 
 ## Structure
 
