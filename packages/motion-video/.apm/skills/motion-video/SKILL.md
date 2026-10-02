@@ -19,7 +19,7 @@ Chrome, ffmpeg, Node and `uv` must be installed. `npm install` in the video fold
 ## Workflow
 
 1. **Brief.** Establish the audience, the single idea the viewer should leave with, the length (60–120 s for a product video, 15–30 s for an announcement), the facts, and where the video lives (repo folder). For a product, read its real material — README, UI, catalog — rather than inventing features. When the brief is the only source, add no facts beyond it, and tell the user about any wording you supplied yourself.
-2. **Story.** Write the scene list with times and one sentence each, before any code. Follow `references/storytelling.md` for structure, on-screen wording and the Yuma voice.
+2. **Story.** Write the story as SCQA (situation, complication, question, answer), then the scene list with times and one sentence each, before any code. Follow `references/storytelling.md` for the structure, on-screen wording and the Yuma voice.
 3. **Scaffold.** Copy `assets/template/` into the project (for example `promo/`). Copy `yuma-bg-title-green.png` and `Yuma_logo_White-RGB.svg` from the `references/` folder of the installed `yuma-design-system` skill into the project's `assets/`, then run `npm install`. The template already uses the Yuma palette and typography, so it needs no brand audit — only keep to its tokens.
 4. **Animate.** Build the scenes in `index.html`. Read `references/engine.md` first: it explains the timeline rules and the reusable scene patterns.
 5. **Check stills, not videos.** `node record.mjs --scale 1 --stills 4,12,30` renders single frames in seconds. Look at them, fix, repeat. Render the full video only when the stills are right.
@@ -53,7 +53,7 @@ node voice.mjs --mux [--theme light]          # <output>[-light].mp4 = video + v
 
 - **Time is the only input.** No CSS transitions or animations, no timers, no `Math.random()`, no `Date`. If a frame depends on anything but `t`, the render will not match the preview.
 - **Style with theme tokens, not raw colours**, so the dark and light versions come from one file.
-- **Say only what is true of the product.** A scripted scene (an agent conversation, a terminal line) is an illustration; real screenshots must come from the real product. Tell the user which is which.
+- **Say only what is true of the product.** A scripted scene (a staged conversation, a terminal line) is an illustration; real screenshots must come from the real product. Tell the user which is which.
 - **A line that does not fit its slot is a script problem.** Shorten it or move its neighbours; do not speed the voice up more than a few percent.
 - **What is named must be on screen when it is named.** Sync to word timestamps, not by guessing.
 - **Check pronunciation of product names by ear** — the user's ear. Offer short variants and let them choose.
@@ -73,7 +73,7 @@ Say plainly what you could not verify. You cannot hear the result: pronunciation
 
 ## Reference files
 
-- `references/storytelling.md` — structure of a Yuma video, on-screen wording, the Yuma voice, Akgents messaging.
+- `references/storytelling.md` — structuring the story with SCQA, on-screen wording, the Yuma voice, product vocabulary.
 - `references/engine.md` — the timeline engine, themes, and scene patterns (statement, catalog, zoomable world, messages, screenshots, typed code).
 - `references/audio.md` — narration, voice providers and models, pronunciation, slot fitting, word sync, music, mixing.
 - `assets/template/` — a working starter: `index.html`, `record.mjs`, `voice.mjs`, `music.py`, `narration.json`.

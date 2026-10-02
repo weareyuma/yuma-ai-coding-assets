@@ -22,7 +22,7 @@ A voice will mangle or spell out coined names. You cannot hear the result, and a
 1. Generate one short test sentence in several spellings (plain, hyphenated, respelled) into `voice/test/`.
 2. Transcribe each to rule out spelled-out letters.
 3. Give the user a one-line command to play them in order, and ask which number is right.
-4. Put the winner in the `pronounce` map (`"Akgents": "Ak-gents"`). It rewrites only what is sent to the voice; on-screen text is untouched.
+4. Put the winner in the `pronounce` map (for example `"Nuvio": "New-vio"`). It rewrites only what is sent to the voice; on-screen text is untouched.
 5. After generating the full narration, transcribe the final mix and check every occurrence. A name can behave differently next to certain words (for example after "an"); rephrase that line rather than fight the voice.
 
 Pronunciation does not carry over between voices or providers: re-test after changing either.

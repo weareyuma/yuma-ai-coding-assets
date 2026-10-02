@@ -70,7 +70,3 @@ Interpolate the centre linearly and the scale geometrically (`exp(lerp(log s0, l
 **Typed code.** Reveal monospace lines by width (`ch` units) so syntax colouring is preserved, and make the result of each line appear as the line completes.
 
 **Outro.** The Forest Green Yuma title background, the name, the one action (typed), a closing line, the Yuma logo. The action is typed in a mono pill: keep the `$` prompt for a shell command, and set `CTA_PROMPT` to `›` or nothing for a date, a URL or a plain call to action.
-
-## A worked example
-
-The Akgents promo (`promo/` in the private `b12consulting/akgentic-quick-start` repository — ask for access) uses every pattern above across nine scenes, in both themes, and is the reference implementation to read when a pattern needs more detail than this page gives.
