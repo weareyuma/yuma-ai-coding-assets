@@ -2,6 +2,8 @@
 
 This guidance is distilled from previous promo videos and the review rounds they went through. Treat it as the current house style, and update it when brand owners refine it.
 
+It complements HyperFrames' own creative guidance (`hyperframes-creative`: story spine, beat direction, narration): use that for craft, and this for how Yuma structures and words a video.
+
 ## Structure: SCQA
 
 Build the story with SCQA — Situation, Complication, Question, Answer — and let each part become one or more scenes. The viewer should be able to say the whole argument back in one sentence: *given this situation, this complication makes the old way fail, so the question is X, and the answer is this.*
@@ -51,6 +53,7 @@ When the subject is not a product, the same rules hold with the nouns changed: t
 - **Headlines state the takeaway**, not the topic: *Set it up in one file. No code.* rather than *Configuration*.
 - **Contrast beats description.** Strike the old idea, state the new one. *A calendar.* → *A planner.*
 - **Present tense, active voice, concrete nouns.** *A colleague joins from their phone, and answers.*
+- **Say the negation aloud.** A struck-through line is only visual; the narration must carry it (*It's not X. It's Y.*).
 - **Affirm what it is.** Prefer *The plan adapts* to *No fixed plan*. When a negation is needed, make it precise: *No plan to redraw*, not *No plan*.
 - **Claim what exists.** Say what the subject does today. Do not present it as a promise, and do not undersell something real as merely a plan. Use no figure that is not a real, sourced one.
 - **Name people as participants.** When people appear alongside software, draw them among the other elements, never off to the side as an audience, and mark who is a person with one consistent visual sign and a legend.

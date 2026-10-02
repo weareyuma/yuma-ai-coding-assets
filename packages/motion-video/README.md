@@ -1,5 +1,11 @@
-This package lets agents create Yuma-branded motion videos — promos, product launches, explainers, announcements — as an HTML timeline rendered to MP4 (4K, dark and light themes) with a text-to-speech voice-over and a synthesised music track.
+This package lets agents create Yuma-branded videos — promos, product launches, trailers, explainers, announcements — with animation, voice-over and music.
 
-It bundles the `motion-video` skill (workflow, storytelling and Yuma voice guidance, a timeline engine reference and a working starter template) and depends on `yuma-design-system` for the brand palette, typography and assets.
+It is a Yuma layer on top of [HyperFrames](https://github.com/heygen-com/hyperframes) (Apache-2.0), which provides the HTML-to-video engine, rendering, audio mixing, checks and preview. The `motion-video` skill adds the Yuma frame spec (`frame.md`), storytelling guidance (SCQA, audiences, the Yuma voice) and the voice-over rules, with a small script that generates narration clips and word timings.
 
-Requirements on the machine that renders: Google Chrome, ffmpeg, Node.js and `uv`. The voice-over uses an ElevenLabs API key (`ELEVENLABS_API_KEY`); word-level sync and transcription checks use an OpenAI key (`OPENAI_API_KEY`).
+It depends on `yuma-design-system` for the brand, and on the HyperFrames skills, which are installed separately:
+
+```bash
+npx hyperframes skills update     # Node 22+ and FFmpeg required
+```
+
+The voice-over script uses an ElevenLabs API key (`ELEVENLABS_API_KEY`); word timings use an OpenAI key (`OPENAI_API_KEY`).

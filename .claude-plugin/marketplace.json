@@ -25,7 +25,7 @@
     },
     {
       "name": "motion-video",
-      "description": "Let agents create yuma-branded motion videos (HTML timeline to 4K MP4, with voice-over and music)",
+      "description": "Let agents create yuma-branded videos with HyperFrames (brand frame spec, storytelling and voice-over rules)",
       "version": "1.0.0",
       "source": "./packages/motion-video"
     },
