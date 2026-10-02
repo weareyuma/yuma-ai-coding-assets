@@ -48,18 +48,3 @@ Editorial, spacious and confident, like the Yuma presentation style: light serif
 
 Agree the vocabulary with the user before writing, and apply it everywhere — screen, captions, narration, legend. Decide explicitly where a coined product term replaces the common word and where the common word must stay.
 
-### Akgents
-
-- The product is **Akgents**; the framework and packages are **akgentic**.
-- A member of an Akgents team is an **akgent**. Use "akgents" throughout — except in the opening two beats, which address newcomers in the common word: *teams of AI agents that actually work together* and *One agent answers.*
-- Package names (`akgentic-agent`, …) are never altered.
-- Spoken: "Akgents" is one word with a soft, audible k — not "A-K-Gents", and not a stressed "ACK". Verify by ear with the chosen voice (see `audio.md`). The singular after "an" tends to be spelled out by voices; rephrase with the plural (*one of the akgents*).
-- The message: Akgents is **not process automation with one global state**; it is an **actor-model** framework — independent actors, each with its own mailbox and state, exchanging messages. Show it rather than say it:
-  - no links drawn in advance — a connection exists only while a message travels;
-  - akgents working in parallel; akgents contacting each other directly;
-  - an akgent asking a human; a human correcting course mid-task;
-  - one human holding several conversations at once;
-  - an akgent waiting on another without blocking the team;
-  - a support human joining through another channel (chat, messaging);
-  - an akgent crashing, and its manager relaunching a fresh one.
-- Closing lines that were approved: *No predefined workflows. No global state. Just actors, collaborating.* and *Collaborative intelligence. It's a vision, running today.*
