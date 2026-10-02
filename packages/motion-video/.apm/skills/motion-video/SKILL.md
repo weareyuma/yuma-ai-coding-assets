@@ -19,7 +19,7 @@ Yuma videos are built with [HyperFrames](https://github.com/heygen-com/hyperfram
 2. **Story.** Write the story as SCQA, then the shot list, following `references/storytelling.md`. Get the user's agreement on the shot list and the narration before building.
 3. **Project.** Create the HyperFrames project through `/hyperframes`. Copy `assets/frame.md` into the project root as `frame.md`: HyperFrames reads it as the brand truth. Copy the Yuma title background and white logo from `yuma-design-system` for the outro, and local font files for the faces `frame.md` names (HyperFrames requires an in-file `@font-face` to a local file).
 4. **Voice.** Generate the narration and its word timings, settle pronunciation with the user, and place the clips, following `references/voice.md`.
-5. **Build, check, preview, render** with the HyperFrames workflow. Time on-screen words to the spoken words.
+5. **Build, check, preview, render** with the HyperFrames workflow. Time on-screen words to the spoken words. Read `references/production-notes.md` before the first build.
 6. **Verify the finished file**, not the sources: look at frames from it, transcribe its audio against the script, confirm the audio lasts as long as the video, and measure loudness. Say plainly what you could not verify: you cannot hear the result, so pronunciation, tone and music are the user's call.
 7. **Deliver** following the repository's own contribution rules.
 
@@ -37,4 +37,5 @@ Show the user frames early and often. Wording, pronunciation and pacing take sev
 - `assets/frame.md` — the Yuma frame spec for HyperFrames: colours, type ramp, components, composition rules.
 - `references/storytelling.md` — SCQA structure, audiences, on-screen wording, the Yuma voice, product vocabulary.
 - `references/voice.md` — narration, voice choice, pronunciation of coined names, placing clips, syncing the picture to words.
+- `references/production-notes.md` — lessons from real builds: word layout, porting an existing page, 4K file size, motion blur and grain, audio levels.
 - `scripts/voice.mjs` — generates the narration clips and word timings (ElevenLabs, with Whisper for timings).

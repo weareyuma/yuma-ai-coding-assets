@@ -224,7 +224,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:0332b5730f26e3e982035eb231e764299ea478b84464a2513978de9b6a46dec6
+  content_hash: sha256:bab578e1fb010ef390eb07c40284fe9e43645c38b71a352541f1a40e54797182
 - kind: project-relative
   target: legacy
   value: .agents/skills/motion-video/assets/frame.md
@@ -326,6 +326,15 @@ deployments:
   content_hash: sha256:625ba82885ed6b6dbba6234246d8601542e5aee8ffd8e6dc0748788d12fdf215
 - kind: project-relative
   target: legacy
+  value: .agents/skills/motion-video/references/production-notes.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:0fa47769c6ca8b34843d1322287eb01f1c640fce17a99c8ec31dc3432dcedf88
+- kind: project-relative
+  target: legacy
   value: .agents/skills/motion-video/references/storytelling.md
   runtime: null
   scope: project
@@ -365,11 +374,12 @@ local_deployed_files:
 - .agents/skills/motion-video/assets/template/voice.mjs
 - .agents/skills/motion-video/references/audio.md
 - .agents/skills/motion-video/references/engine.md
+- .agents/skills/motion-video/references/production-notes.md
 - .agents/skills/motion-video/references/storytelling.md
 - .agents/skills/motion-video/references/voice.md
 - .agents/skills/motion-video/scripts/voice.mjs
 local_deployed_file_hashes:
-  .agents/skills/motion-video/SKILL.md: sha256:0332b5730f26e3e982035eb231e764299ea478b84464a2513978de9b6a46dec6
+  .agents/skills/motion-video/SKILL.md: sha256:bab578e1fb010ef390eb07c40284fe9e43645c38b71a352541f1a40e54797182
   .agents/skills/motion-video/assets/frame.md: sha256:14ab7b3c003630834a87f709dd0c53eff883e0250752f1f29af7506b88a76218
   .agents/skills/motion-video/assets/template/.gitignore: sha256:9cc4c94fe9edbaa29d1028061fb2183e6f8e6002986978b02f7b6bb102e78d27
   .agents/skills/motion-video/assets/template/assets/README.txt: sha256:a171b9aee5344a34440ca534a12f0457c24dccc451b7a96a6f79c5ebaa531c02
@@ -381,6 +391,7 @@ local_deployed_file_hashes:
   .agents/skills/motion-video/assets/template/voice.mjs: sha256:0a84aa75b95db206057cde7c40cfdba2efcc100e45fe7efa83ff9d0976b0ccfe
   .agents/skills/motion-video/references/audio.md: sha256:c0ca033f5748d688bb1a056c074c0651978e981bee6f708a3c152e05e9aef9a5
   .agents/skills/motion-video/references/engine.md: sha256:625ba82885ed6b6dbba6234246d8601542e5aee8ffd8e6dc0748788d12fdf215
+  .agents/skills/motion-video/references/production-notes.md: sha256:0fa47769c6ca8b34843d1322287eb01f1c640fce17a99c8ec31dc3432dcedf88
   .agents/skills/motion-video/references/storytelling.md: sha256:37b00bdcc3f36a8463c670dc6933e59df180fd3195920c6c371960a28ff905eb
   .agents/skills/motion-video/references/voice.md: sha256:594c1edfc2c5856bde0348f7940ea81cb4cac52b97597d08cb92a412a8796bcc
   .agents/skills/motion-video/scripts/voice.mjs: sha256:bbf31b9b009fc6eb6eec6a6b7efbfa7b48cfca19842a5bad9438d760db24d24f
