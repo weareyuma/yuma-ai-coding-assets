@@ -1,3 +1,12 @@
+> [!IMPORTANT]
+> This repository has moved to the Yuma GitHub Enterprise: https://github.com/yuma-lln/yuma-ai-coding-assets
+>
+> It is an internal repository, so you need to be signed in with your Yuma Enterprise account (the one ending in `_yuma`). This copy is archived and no longer updated. To keep receiving updates, register the new location:
+>
+> ```bash
+> apm marketplace add yuma-lln/yuma-ai-coding-assets
+> ```
+
 # Installing APM
 
 To install APM, you can use the following command:
