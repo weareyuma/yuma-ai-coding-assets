@@ -24,6 +24,12 @@
       "source": "./packages/jira"
     },
     {
+      "name": "motion-video",
+      "description": "Let agents create yuma-branded videos with HyperFrames (brand frame spec, storytelling and voice-over rules)",
+      "version": "1.0.0",
+      "source": "./packages/motion-video"
+    },
+    {
       "name": "ogsm",
       "description": "OGSM (Objective, Goals, Strategies, Measures) skill",
       "version": "1.0.0",
